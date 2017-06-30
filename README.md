@@ -13,7 +13,7 @@ CLIENT_SECRET=YOUR_CLIENT_SECRET
 REDIRECT_URI=http://localhost:3000/callback.php
 AUTH_URL=https://api.id.me/oauth/authorize
 TOKEN_URL=https://api.id.me/oauth/token
-ATTRIBUTES_URL=https://api.id.me/api/public/v2/attributes.json
+ATTRIBUTES_URL=https://api.id.me/api/public/v3/attributes.json
 ````
 
 Run the following to install the dependencies and start the server.
