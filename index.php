@@ -6,9 +6,8 @@
 <html>
     <body>
         <?php if(! isset($_SESSION['payload'])): ?>
-            <a href="/callback.php" class="idme-btn">
-              <img src="https://s3.amazonaws.com/idme/developer/idme-buttons-2.0.1/assets/img/btn-alt-Troop.png" border="0" alt="Verify with ID.me Troop ID" class="idme-btn-primary-sm-Troop">
-            </a>
+            <span id="idme-wallet-button" data-scope="verify" data-hlp="http://localhost:3000/callback.php"></span>
+            <script src="https://s3.amazonaws.com/idme/developer/idme-buttons/assets/js/idme-wallet-button.js"></script>
         <?php else: echo $_SESSION['payload'] ?>
         <?php endif ?>
     </body>
